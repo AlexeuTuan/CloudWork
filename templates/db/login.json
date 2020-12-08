@@ -1,0 +1,34 @@
+{
+  "log": [
+    {
+      "ID": 0,
+      "login": "admin",
+      "pass": "admin"
+    },
+    {
+      "ID": 1,
+      "login": "1",
+      "pass": "001"
+    },
+    {
+      "ID": 2,
+      "login": "2",
+      "pass": "001"
+    },
+    {
+      "ID": 3,
+      "login": "3",
+      "pass": "001"
+    },
+    {
+      "ID": 4,
+      "login": "4",
+      "pass": "001"
+    },
+    {
+      "ID": 521,
+      "login": "try",
+      "pass": "not"
+    }
+  ]
+}

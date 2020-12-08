@@ -1,0 +1,198 @@
+{
+  "Projects": [
+    {
+      "ID_Project": 1,
+      "Name_Project": "Project 1",
+      "Manager": 1,
+      "Date_of_start": "20.10.2011",
+      "Date_of_end": "19.11.2017",
+      "Standing": "completed",
+      "Description": ""
+    },
+    {
+      "ID_Project": 2,
+      "Name_Project": "Project 2",
+      "Manager": 4,
+      "Date_of_start": "23.05.2018",
+      "Date_of_end": "19.11.2021",
+      "Standing": "started",
+      "Description": ""
+    },
+    {
+      "ID_Project": 3,
+      "Name_Project": "Project 3",
+      "Manager": 3,
+      "Date_of_start": "02.06.2018",
+      "Date_of_end": "19.11.2024",
+      "Standing": "not started",
+      "Description": ""
+    }
+  ],
+  "Stages": [
+    {
+      "ID_Stage": 0,
+      "Name_Stage": "Null",
+      "Projects": []
+    },
+    {
+      "ID_Stage": 1,
+      "Name_Stage": "First",
+      "Projects": [
+        {
+          "ID_Project": 1,
+          "Workers": [
+            {
+              "ID_Worker": 1,
+              "Role": "Manager"
+            },
+            {
+              "ID_Worker": 2,
+              "Role": "Performers"
+            }
+          ],
+          "Date_of_start": "20.10.2011",
+          "Date_of_end": "19.10.2017",
+          "Standing": "completed",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID_Stage": 2,
+      "Name_Stage": "Second",
+      "Projects": [
+        {
+          "ID_Project": 1,
+          "Workers": [
+            {
+              "ID_Worker": 1,
+              "Role": "Manager"
+            },
+            {
+              "ID_Worker": 2,
+              "Role": "Performers"
+            }
+          ],
+          "Date_of_start": "19.10.2017",
+          "Date_of_end": "19.11.2017",
+          "Standing": "completed",
+          "Description": ""
+        },
+        {
+          "ID_Project": 2,
+          "Workers": [
+            {
+              "ID_Worker": 1,
+              "Role": "Perfomers"
+            },
+            {
+              "ID_Worker": 3,
+              "Role": "Manager"
+            }
+          ],
+          "Date_of_start": "23.05.2018",
+          "Date_of_end": "19.11.2021",
+          "Standing": "started",
+          "Description": ""
+        }
+      ]
+    },
+    {
+      "ID_Stage": 3,
+      "Name_Stage": "Third",
+      "Projects": [
+        {
+          "ID_Project": 3,
+          "Workers": [
+            {
+              "ID_Worker": 3,
+              "Role": "Manager"
+            },
+            {
+              "ID_Worker": 4,
+              "Role": "Performers"
+            }
+          ],
+          "Date_of_start": "02.06.2018",
+          "Date_of_end": "19.11.2024",
+          "Standing": "not started",
+          "Description": ""
+        }
+      ]
+    }
+  ],
+  "Peoples": [
+    {
+      "ID_Worker": 0,
+      "Second_name": "Admins",
+      "First_name": "Admin",
+      "Patronymic": "Adminowi",
+      "Date_of_birthday": "11.11.1984",
+      "Date_of_hire": "07.06.2012",
+      "Post": 0
+    },
+    {
+      "ID_Worker": 1,
+      "Second_name": "Petrov",
+      "First_name": "Peter",
+      "Patronymic": "Petrovich",
+      "Date_of_birthday": "10.05.1974",
+      "Date_of_hire": "07.06.2008",
+      "Post": 1
+    },
+    {
+      "ID_Worker": 2,
+      "Second_name": "Ivanov",
+      "First_name": "Ivan",
+      "Patronymic": "Ivanovich",
+      "Date_of_birthday": "10.05.1964",
+      "Date_of_hire": "07.06.2008",
+      "Post": 2
+    },
+    {
+      "ID_Worker": 3,
+      "Second_name": "Samoylova",
+      "First_name": "Diana",
+      "Patronymic": "Alekseevna",
+      "Date_of_birthday": "15.03.1996",
+      "Date_of_hire": "15.11.2017",
+      "Post": 3
+    },
+    {
+      "ID_Worker": 4,
+      "Second_name": "Izmailov",
+      "First_name": "Gregory",
+      "Patronymic": "Mikhalovich",
+      "Date_of_birthday": "10.05.1987",
+      "Date_of_hire": "17.04.2018",
+      "Post": 3
+    },
+    {
+      "ID_Worker": 5,
+      "First_name": "Admin",
+      "Second_name": "Admins",
+      "Patronymic": "Patronymic",
+      "Date_of_birthday": "",
+      "Date_of_hire": "",
+      "Post": 0
+    }
+  ],
+  "Posts": [
+    {
+      "ID_Post": 0,
+      "Post": "Administrator"
+    },
+    {
+      "ID_Post": 1,
+      "Post": "Director"
+    },
+    {
+      "ID_Post": 2,
+      "Post": "MEGA MEN"
+    },
+    {
+      "ID_Post": 3,
+      "Post": "Engineer"
+    }
+  ]
+}

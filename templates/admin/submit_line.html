@@ -1,0 +1,14 @@
+{% load i18n admin_urls %}
+<div class="submit-row">
+{% block submit-row %}
+{% if show_save %}<input type="submit" value="{% trans 'Сохранить' %}" class="default" name="_save">{% endif %}
+{% if show_delete_link and original %}
+    {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
+    <p class="deletelink-box"><a href="{% add_preserved_filters delete_url %}" class="deletelink">{% trans "Удалить" %}</a></p>
+{% endif %}
+{% if show_save_as_new %}<input type="submit" value="{% trans 'Сохранить, как новое' %}" name="_saveasnew">{% endif %}
+{% if show_save_and_add_another %}<input type="submit" value="{% trans 'Сохранить и добавить другое' %}" name="_addanother">{% endif %}
+{% if show_save_and_continue %}<input type="submit" value="{% if can_change %}{% trans 'Сохранить и продолжить' %}{% else %}{% trans 'Сохранить и посмотреть' %}{% endif %}" name="_continue">{% endif %}
+{% if show_close %}<a href="{% url opts|admin_urlname:'changelist' %}" class="closelink">{% trans 'Закрыть' %}</a>{% endif %}
+{% endblock %}
+</div>

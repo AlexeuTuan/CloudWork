@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Список библиотек</h1>
+
+    {% if library_list %}
+    <ul>
+
+    {% for library in library_list %}
+      <li>
+        <a href="{{ library.get_absolute_url }}">{{ library.name }}</a> ({{library.owner}}) ({{library.location}}) ({{library.dateFoundation}})
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>Список библиотек пуст.</p>
+    {% endif %}
+{% endblock %}
